@@ -14,17 +14,11 @@
         margin-bottom: 0;;
       }
       .thumbnail {
-        width: 300px;
-        display: block;
+        width: 100%;
+        /* display: block; */
       }
       .search-bar {
         display: block;
-      }
-      .video-preview {
-        width: 300px;
-        display: inline-block;
-        vertical-align: top;
-        margin-right: 15px;
       }
       .video-title {
         margin-top: 0;
@@ -33,15 +27,9 @@
         line-height: 18px;
         margin-bottom: 4px;
       }
-      .channel-picture {
-         display: inline-block;
-         width: 50px;
-         vertical-align: top;
-         /* margin-top: 20px; */
-      }
-      .video-info{
-        display: inline-block;
-        width: 200px;
+      .video-info-grid {
+        display: grid;
+        grid-template-columns: 50px 1fr;
       }
       .profile-picture {
         width: 40px;
@@ -58,38 +46,109 @@
       .video-author {
         margin-bottom: 3px;
       }
+      .video-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 15px;
+        row-gap: 40px;
+      }
       
     </style>
   </head>
   <body>
     <input class="search-bar" type="text" placeholder="Search">
-    <div class="video-preview">
-      <div class="thumbnail-row"><img class="thumbnail" src="thumbnails/img1.webp" alt=""></div>
-        <div>
-          <div class="channel-picture"><img class="profile-picture" src="channel-pfp/pfp1.jpg" alt=""></div>
-          <div class="video-info">
-            <p class="video-title"> इस Pitcher के Innovation को देख Shark Peyush ने Cover कर लिया अपना Face |...</p>
-            <p class="video-author">Shark Tank India</p>
-            <p class="video-stats">3.4M views &#183 6 months ago</p></div>
-          
-        </div>
-        <div>
-        </div>
+
+    <div class="video-grid">
+      <div class="video-preview">
+        <div class="thumbnail-row"><img class="thumbnail" src="thumbnails/img1.webp" alt=""></div>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <img class="profile-picture" src="channel-pfp/pfp1.jpg" alt="">
+            </div>
+            <div class="video-info">
+              <p class="video-title"> इस Pitcher के Innovation को देख Shark Peyush ने Cover कर लिया अपना Face |...</p>
+              <p class="video-author">Shark Tank India</p>
+              <p class="video-stats">3.4M views &#183 6 months ago</p>
+            </div>
+          </div>
+          <div>
+          </div>
+      </div>
+      <div class="video-preview">
+        <div class="thumbnail-row"><img class="thumbnail" src="thumbnails/img3.webp" alt=""></div>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <img class="profile-picture" src="channel-pfp/pfp3.jpg" alt="">
+            </div>
+            <div class="video-info">
+              <p class="video-title">$1 vs $250,000,000 Private Island!</p>
+              <p class="video-author">MrBeast</p>
+              <p class="video-stats">6.1M views &#183 1 month ago</p></div>
+          </div>
+          <div>
+          </div>
+      </div>
+      <div class="video-preview">
+        <div class="thumbnail-row"><img class="thumbnail" src="thumbnails/img2.webp" alt=""></div>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <img class="profile-picture" src="channel-pfp/pfp2.jpg" alt="">
+            </div>
+            <div class="video-info">
+              <p class="video-title"> इस Pitcher के Innovation को देख Shark Peyush ने Cover कर लिया अपना Face |...</p>
+              <p class="video-author">Shark Tank India</p>
+              <p class="video-stats">3.4M views &#183 6 months ago</p>
+            </div>
+          </div>
+          <div>
+          </div>
+      </div>
+      <div class="video-preview">
+        <div class="thumbnail-row"><img class="thumbnail" src="thumbnails/img4.webp" alt=""></div>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <img class="profile-picture" src="channel-pfp/pfp4.jpg" alt="">
+            </div>
+            <div class="video-info">
+              <p class="video-title">RAP CYPHER IN AMONG US ft. @raftaarmusic @theofficialbali...</p>
+              <p class="video-author">Samay Raina</p>
+              <p class="video-stats">910 views &#183 3 years ago</p></div>
+          </div>
+          <div>
+          </div>
+      </div>
+      <div class="video-preview">
+        <div class="thumbnail-row"><img class="thumbnail" src="thumbnails/img5.jpg" alt=""></div>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <img class="profile-picture" src="channel-pfp/pfp5.jpg" alt="">
+            </div>
+            <div class="video-info">
+              <p class="video-title">Grow your business with us!</p>
+              <p class="video-author">Brian Tracy</p>
+              <p class="video-stats">840k views &#183 3 weeks ago</p>
+            </div>
+          </div>
+          <div>
+          </div>
+      </div>
+      <div class="video-preview">
+        <div class="thumbnail-row"><img class="thumbnail" src="thumbnails/img6.webp" alt=""></div>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <img class="profile-picture" src="channel-pfp/pfp6.jpg" alt="">
+            </div>
+            <div class="video-info">
+              <p class="video-title">Secrets you should know |</p>
+              <p class="video-author">Grow with Alex</p>
+              <p class="video-stats">224k views &#183 1 month ago</p></div>
+          </div>
+          <div>
+          </div>
+      </div>
     </div>
-    <div class="video-preview">
-      <div class="thumbnail-row"><img class="thumbnail" src="thumbnails/img3.webp" alt=""></div>
-        <div>
-          <div class="channel-picture"><img class="profile-picture" src="channel-pfp/pfp3.jpg" alt=""></div>
-          <div class="video-info">
-            <p class="video-title">$1 vs $250,000,000 Private Island!</p>
-            <p class="video-author">MrBeast</p>
-            <p class="video-stats">6.1M views &#183 1 month ago</p></div>
-          
-        </div>
-        <div>
-        </div>
-    </div>
+
     
     
-  </body>
+    </body>
 </html>
